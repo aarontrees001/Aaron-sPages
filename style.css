@@ -45,4 +45,33 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+.contact-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px 40px;
+  background-color: #ffffff;
+  color: #2E6F40; /* Forest Green */
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 8px; /* Slightly squared corners for a "pro" 2026 look */
+  text-transform: uppercase;
+  
+  /* Depth Effects */
+  box-shadow: 0 6px 0px #1a3d24, /* Darker green "base" under the button */
+              0 12px 24px rgba(0,0,0,0.3);
+  
+  transition: all 0.1s ease-in-out; /* Fast transition for a snappy feel */
+}
+
+/* The "Press" Animation */
+.contact-btn:hover {
+  transform: translateY(3px); /* Moves the button down */
+  box-shadow: 0 3px 0px #1a3d24, /* Shrinks the depth shadow */
+              0 6px 12px rgba(0,0,0,0.2);
+}
+
+.contact-btn:active {
+  transform: translateY(6px); /* Moves it all the way down to the "base" */
+  box-shadow: 0 0px 0px #1a3d24; /* Shadow disappears when "fully pressed" */
+}
 
